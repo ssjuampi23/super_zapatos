@@ -2,7 +2,6 @@
 
 <table>
   <tr>
-    <th>Store</th>
     <th>Name</th>
     <th>Address</th>
     <th></th>
@@ -12,7 +11,6 @@
 
 <% @stores.each do |store| %>
   <tr>
-    <td><%= store.store_id %></td>
     <td><%= store.name %></td>
     <td><%= store.address %></td>
     <td><%= link_to 'Show', store %></td>
