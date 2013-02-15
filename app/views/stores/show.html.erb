@@ -1,15 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @store.name %>
+<p id="notice">
+	<%= notice %>
 </p>
 
 <p>
-  <b>Address:</b>
-  <%= @store.address %>
+	<b>Name:</b>
+	<%= @store.name %>
 </p>
 
+<p>
+	<b>Address:</b>
+	<%= @store.address %>
+</p>
 
-<%= link_to 'Edit', edit_store_path(@store) %> |
-<%= link_to 'Back', stores_path %>
+<%= link_to 'Edit', edit_store_path(@store),:class => "btn btn-link" %> |
+<%= link_to 'Back', stores_path,:class => "btn btn-link" %>
