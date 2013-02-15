@@ -2,12 +2,11 @@ SuperZapatos::Application.routes.draw do
   
   root to: 'stores#index'
   
-  
-  
   resources :articles
 
   resources :stores
 
+  mount Services::API => "/"
 
 # The priority is based upon order of creation:
 # first created -> highest priority.
